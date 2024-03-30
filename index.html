@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur le CV en ligne de Maxime Delhaye.
+    Vous y découvrirez le profil d'un jeune dynamique et ambitieux !
+    N'hésitez pas à me contacter !">
+    <meta name="keywords" content="CV, Curriculum Vitae, Maxime Delhaye, Informatique, Développeur, Étudiant, Stage, Emploi">
+    <meta name="author" content="Maxime Delhaye">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    <title>CV M. Delhaye</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/jquery.min.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <link rel="shortcut icon" href="scripts/pluginIMissYou/favicon.ico">
+    <script src="scripts/pluginIMissYou/jquery.iMissYou.js" defer></script>
+</head>
+<body>
+
+    <button id="print-button">
+        <img src="assets/printer.png" alt="Print">
+    </button>
+    
+
+    <!-- First part is a big rectangle with my fullname written in it and below the heading "Etudiant en informatique" -->
+    <div class="title-background"></div>
+    <div class="first-part">
+        <h1 id="name">Maxime Delhaye</h1>
+        <h2>Étudiant en informatique</h2>
+    </div>
+
+
+    <!-- The second part is divided in three part with the adress, phone number and then-->
+    <div class="second-part">
+        <div class="info-elt" id="address">
+            <p>1 rue de la paix<br>
+            75000 Paris<br>
+            France</p>
+        </div>
+        <div class="info-elt" id="phone">
+            <p>+33 6 12 34 56 78</p>
+        </div>
+        <div class="info-elt" id="mail">
+            <p>maxime.delhayespotify@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- The third part is a big rectangle with the heading "Objectif" -->
+
+    <div class="third-part">
+        <div id="objectif-title">
+            <span class="line"></span>
+            <h2>Objectif</h2>
+            <span class="line"></span>
+        </div>
+        <h3 class="strong">Trouver un stage de fin d'études</h3>
+    </div>
+
+    <!--  The last part slices the page vertically, left we have the "Éducation" and "Compétences clés" 
+        then on the right we have "Expérience", "Activités liées à l'informatique" and "Activités extra-scolaires" -->
+    
+    <div class="last-part">
+        <div class="left-part">
+            <section class="education">
+                <h3>Éducation</h3>
+                <p class="underlined">En cours :</p>
+                <p class="strong">HEH - Département des Sciences et technologies</p>
+                <p>Bachelier en Informatique, réseaux et télécommunications <br>(option développement)</p>
+                <p class="underlined">Certifications obtenues :</p>
+                <ul>
+                    <li><p>Baccalauréat Français - (Mention Bien)</p></li>
+                    <li><p>Cisco Introduction to Networks</p></li>
+                    <li><p>Permis B</p></li>
+                </ul>
+            </section>
+            <section class="skills" id="skills">
+                <h3>Compétences clés</h3>
+                <p>Bonne maîtrise de nombreux langages de programmation et de l'algorithmie</p>
+                <p>Français : Langue maternelle</p>
+                <p>Anglais : Niveau B2</p>
+                <p>Allemand : Niveau B1</p>
+                <p>Japonais : Connaissances de base</p>
+            </section>
+        </div>
+        <div class="right-part">
+            <section id="experiences">
+                <div class="right-titles">
+                    <h3>Expérience</h3>
+                    <span class="line desktop"></span>
+                </div>
+                <div class="experience">
+                    <p>Février 2018 (1 semaine) <br>Stage dans un commerce de produits informatiques (vente et dépannage)</p>
+                    <p>Montage de PC Tours et dépannage de PC portables</p>
+                    <p>NEXT Informatique - 7000 Mons</p>
+                </div>
+
+                <div class="secondary-line"></div>
+
+                <div class="experience">
+                    <p>Juin 2019 (1 semaine) <br>Stage dans la Cellule Informatique de la Police Fédérale</p>
+                    <p>Administration Réseau</p>
+                    <p>Police Fédérale de Mons - 7000 Mons</p>
+                </div>
+
+                <div class="secondary-line"></div>
+                
+                <div class="experience">
+                    <p>Juin 2023 - Décembre 2023 <br>Job étudiant en tant qu'intérimaire</p>
+                    <p>Hôte de caisse et mise en rayon</p>
+                    <p>Intermarché - 7000 Mons</p>
+                </div>
+            </section>
+            <section id="computer-activities">
+                <div class="right-titles">
+                    <h3 class="smaller-title">Activités liées à l'informatique</h3>
+                    <span class="line desktop"></span>
+                </div>
+                <ul>
+                    <li>Musée des sciences - HeH - 2022-2024</li>
+                    <li>Google Developer Student Club - UMons - 2023-2024</li>
+                    <li>Hackathons :</li>
+                    <li class="nodeco-li">
+                        <ul>
+                            <li>Cyber Security Challenge 2022</li>
+                            <li>ETH Oxford 2024 (Mathematical Institute, Oxford University)</li>
+                            <li>ETHDam 2024 (Pakhuis de Zwijger, Amsterdam)</li>    
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="extra-scolar-activities">
+                <div class="right-titles">
+                    <h3 class="smaller-title">Activités extra-scolaires</h3>
+                    <span class="line desktop"></span>
+                </div>
+                <ul>
+                    <li>Développement d'applications Web</li>
+                    <li>Apprentissage du Japonais</li>
+                    <li>Pratiquant de guitare</li>
+                    <li>Activités sportives diverses : Callisthénie, randonnée…</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Maxime Delhaye - 2024</p>
+    </footer>
+
+
+</body>
+</html>

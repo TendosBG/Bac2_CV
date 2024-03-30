@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border-color: #bf9369;
+    --secondary-color: #313849;
+    --background-color: #f2f3f3;
+    --font-color: #404141;
+
+}
+
+html{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#print-button{
+    position: absolute;
+    padding: 0;
+    top : 1.3rem;
+    right: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#print-button img{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--background-color);
+    border-radius: 15%;
+}
+
+
+
+/*First part is a big rectangle with my fullname written in it and below the heading "Etudiant en informatique"*/
+.first-part{
+    border: 6px solid var(--border-color);
+    color: var(--secondary-color);
+    letter-spacing: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 10vw;
+    width: fit-content;
+    margin: 10vh auto 0 auto;
+}
+
+.first-part h1{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.first-part h2{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.title-background{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*The second part is divided in three part with the adress, phone number and then the email*/
+
+.second-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.info-elt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.info-elt p{
+    margin: 0;
+    padding: 0;
+}
+
+/* The third part is a big rectangle with the heading "Objectif" */
+
+/* the line span must be 20vw long */
+.line{
+    display: block;
+    border-bottom: 5px solid var(--border-color);
+    width: 20vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.secondary-line{
+    display: block;
+    border-bottom: 5px solid var(--secondary-color);
+    width: 20vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.strong{
+    font-weight: 700;
+}
+
+#objectif-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#objectif-title h2{
+    font-size: 1.75rem;
+    font-weight: normal;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin: 0;
+    padding: 1rem 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.third-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /*width: fit-content;*/
+    margin: 0 auto;
+}
+
+.third-part h3{
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 0;
+    color: var(--font-color);
+}
+
+
+/*  The last part slices the page vertically, left we have the "Éducation" and "Compétences clés" 
+        then on the right we have "Expérience", "Activités liées à l'informatique" and "Activités extra-scolaires" */
+
+.last-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 10vw;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.last-part h3{
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* The left part */
+.left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 10px;
+    padding-bottom: 15%;
+    width: 30%;
+    margin: 0 auto;
+    margin-left: 9rem;
+    background-color: var(--background-color);
+}
+
+.left-part h3{
+    font-size: 2rem;
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+/* The right part */
+.right-part{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+.right-part .smaller-title{
+    font-size: 1.5rem;
+}
+
+.right-part h3{
+    font-size: 1.75rem;
+    width: 15vw;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+
+.right-part p{
+    padding-left: 10px;
+}
+
+.right-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+}
+
+.underlined{
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nodeco-li{
+    list-style-type: none;
+}
+
+/* Mediaqueries */
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px){
+    .first-part{
+        padding: 1rem 5vw;
+    }
+
+    .second-part{
+        padding: 0 5vw;
+    }
+
+    .third-part{
+        padding: 1rem 5vw;
+    }
+
+    .last-part{
+        padding: 0 5vw;
+    }
+
+    .left-part{
+        width: 40%;
+        margin-left: 5rem;
+        padding-bottom: 25%;
+    }
+
+    .right-part{
+        width: 60%;
+    }
+
+    .right-part .smaller-title{
+        font-size: 1.25rem;
+    }
+}
+
+/* For screens smaller than 800px */
+@media screen and (max-width: 800px){
+    .first-part{
+        padding: 1rem 2vw;
+    }
+
+    .first-part h1{
+        font-size: 2.5rem;
+    }
+
+    .second-part{
+        padding: 0 2vw;
+    }
+
+    .third-part{
+        padding: 1rem 2vw;
+    }
+
+    .third-part h3{
+        font-size: 1.5rem;
+    }
+
+    .last-part{
+        padding: 0 2vw;
+    }
+
+    .left-part{
+        width: 40%;
+        margin-left: 2rem;
+        padding-bottom: 30%;
+    }
+
+    .right-part{
+        width: 60%;
+    }
+    .last-part h3{
+        font-size: 1rem;
+    }
+    .right-part .smaller-title{
+        font-size: 0.8rem;
+    }
+}
+
+/* For screens smaller than 700px */
+@media screen and (max-width: 700px){
+    .first-part h1{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    .first-part h2{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .second-part{
+        padding: 0 0.5vw;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+/* For screens smaller than 450px */
+@media screen and (max-width: 450px){
+    .line{
+        width: 15vw;
+        margin: 0;
+    }
+    #objectif-title{
+        width: 100%;
+    }
+    .first-part{
+        padding: 1rem 0.5vw;
+        width: 70%;
+    }
+    .title-background{
+        height: 15vh;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+
+
+    .first-part h1{
+        font-size: 1.5rem;
+        letter-spacing: normal;
+    }
+    .first-part h2{
+        font-size: 1rem;
+        letter-spacing: normal;
+    }
+
+    .first-part p{
+        font-size: 0.8rem;
+    }
+
+    .second-part{
+        font-size: 1rem;
+    }
+    #objectif-title h2{
+        letter-spacing: normal;
+        font-size: 1.5rem;
+    }
+
+    .third-part h3{
+        font-size: 1.2rem;
+    }
+
+    .last-part{
+        padding: 0 0.5vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-part{
+        width: 90%;
+        padding-bottom: 10%;
+        margin-bottom: 5vh;
+        margin-left: 3%;
+    }
+
+    .left-part h3{
+        font-size: 1.5rem;
+    }
+
+    .right-part{
+        width: 90%;
+    }
+
+    .right-part h3{
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+
+    .secondary-line{
+        width: 35vw;
+    }
+
+    .right-part .smaller-title{
+        font-size: 1rem;
+    }
+
+    .right-part p{
+        padding-left: 5px;
+    }
+
+    .desktop{
+        display: none;
+    }
+}
+
+
+@media print {
+    footer{
+        display: none;
+    }
+    #print-button{
+        display: none;
+    }
+    .title-background{
+        height: 7.5vh;
+    }
+    .first-part{
+        margin: 2.5vh auto 0 auto;
+    }
+    .first-part h1{
+        font-size: 2rem;
+    }
+    .first-part h2{
+        font-size: 1.5rem;
+    }
+
+    .second-part{
+        margin: 0 auto;
+    }
+
+    .second-part .info-elt{
+        font-size: 1rem;
+    }
+
+    .third-part{
+        display: none;
+    }
+
+    .last-part{
+        margin: 0 auto;
+    }
+
+    .left-part{
+        width: 40%;
+        margin-left: 5rem;
+        padding: 1rem 10px;
+    }
+
+    .right-part{
+        width: 60%;
+    }
+
+    .right-part .smaller-title{
+        font-size: 0.8rem;
+    }
+
+    .last-part h3{
+        font-size: 1.25rem;
+    }
+    .last-part p{
+        font-size: 0.8rem;
+    }
+
+    #extra-scolar-activities{
+        bottom: 10vh;
+        left: 10vw;
+        position: absolute;
+        width: 50%;
+    }
+
+    #extra-scolar-activities h3{
+        margin-left: 10vw;
+        width:25vw;
+        text-align: center;
+    }
+
+    #extra-scolar-activities .line{
+        display: none;
+    }
+}
